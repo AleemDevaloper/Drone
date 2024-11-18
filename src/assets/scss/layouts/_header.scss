@@ -1,0 +1,70 @@
+.upper{
+    background: $main-color;
+    
+    #header{
+        background: transparent;  
+        .navbar-collapse{
+            .nav-item{
+                font-size: 100px;
+                .nav-link{
+                    font-size: 100px;
+                    color: $white;
+                }
+                .nav-link:hover{
+                    color: $white;
+                }
+            }
+        }
+    }
+    .text-area{
+        color: $white;
+        margin-bottom: 30px;
+        h1{
+            font-size: 48px;
+            @include max(800px){
+                font-size: 40px;
+            }
+            @include max(550px){
+                text-align: center;
+            }
+        }
+        p{
+            width: 50%;
+            font-size: 20px;
+            text-align: center;
+            @include max(800px){
+                width: 70%;
+                font-size: 15px;
+            }
+           
+        }
+        button{
+            color: $white;
+            background: $sub2-main-color;
+            border: 1px solid $sub2-main-color;
+            transition: all .5s ease;
+        }
+        button:hover{
+            color: $white;
+            border: 1px solid $sub2-main-color;
+            background: transparent;
+        }
+        img{
+            width: 50%;
+            height: 50%;
+            @include min(1326px){
+                width: 30%;
+                height: 30%;
+            }
+            @include max(626px){
+                width: 80%;
+                height: 80%;
+            }
+            @include max(426px){
+                width: 100%;
+               
+            }
+        }
+
+    }
+}
